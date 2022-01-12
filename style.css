@@ -1,0 +1,116 @@
+html{
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    border: 1px solid red;
+    width: 635px;
+    height: 475px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% [Line1] 55% [Line2];
+    background-color: white;
+}
+
+.item1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / Line1;
+    padding: 0 40px;
+    align-self: center;
+}
+
+.item2{
+    background-color: hsl(179, 62%, 43%);
+    grid-column: 1 / span 1;
+    grid-row: 2 / Line2;
+    color: #fff;
+    padding: 0 42px;
+    place-self: center;
+}
+
+.item3{
+    background-color: hsl(180, 57%, 61%);
+    grid-column: 2 / span 2;
+    grid-row: 2 / Line2;
+}
+
+/* item1 */
+
+.item1__title{
+    margin-bottom: 28px;
+    color: hsl(179, 62%, 43%);
+}
+
+.item1__scntitle{
+    margin-bottom: 18px;
+    color: hsl(71, 73%, 54%);
+}
+
+.item1__p{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.50;
+}
+
+/* item2 */
+
+.item2__container{
+    
+}
+
+.item2__title{
+    padding-bottom: 23px;
+}
+
+.item2__price{
+    display: flex;
+    align-items: center;
+}
+
+.item2__price > .price{
+    font-size: 30px;
+    margin-right: 14px;
+}
+
+.item2__price > .text{
+    color: hsl(204, 43%, 93%);
+}
+
+.item2__text{
+    padding-bottom: 30px;
+}
+
+.item2__btn{
+    color: #fff;
+    background-color: hsl(71, 73%, 54%);
+    width: 237px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
