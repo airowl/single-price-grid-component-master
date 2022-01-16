@@ -12,7 +12,6 @@ html{
 
 body{
     font-family: 'Karla', sans-serif;
-    background-color: black;
 }
 
 a{
@@ -25,16 +24,23 @@ a{
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    background-color: hsl(204, 43%, 93%);
 }
 
 .container{
-    border: 1px solid red;
     width: 635px;
     height: 475px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 45% [Line1] 55% [Line2];
     background-color: white;
+    border-radius: 10px;
+}
+
+.items_down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item1{
@@ -49,14 +55,14 @@ a{
     grid-column: 1 / span 1;
     grid-row: 2 / Line2;
     color: #fff;
-    padding: 0 42px;
-    place-self: center;
+    border-bottom-left-radius: 10px;
 }
 
 .item3{
-    background-color: hsl(180, 57%, 61%);
+    background-color: hsl(180, 38%, 54%);
     grid-column: 2 / span 2;
     grid-row: 2 / Line2;
+    border-bottom-right-radius: 10px;
 }
 
 /* item1 */
@@ -77,10 +83,6 @@ a{
 }
 
 /* item2 */
-
-.item2__container{
-    
-}
 
 .item2__title{
     padding-bottom: 23px;
@@ -114,3 +116,24 @@ a{
     justify-content: center;
     border-radius: 5px;
 }
+
+/* item3 */
+
+.item3{
+    color: #fff;
+}
+
+.item3__container{
+    width: 237px;
+}
+
+.item3__title{
+    padding-bottom: 23px;
+}
+
+.item3__text{
+    padding-right: 30px;
+}
+
+/* mobile */
+
