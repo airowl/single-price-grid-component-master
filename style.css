@@ -137,3 +137,50 @@ a{
 
 /* mobile */
 
+@media only screen and (max-width: 636px){
+
+    .hero{
+        padding: 200px 100px;
+    }
+
+    .container{
+        width: 635px;
+        height: 475px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr [Line1] 1fr [Line2] 1fr [Line3];
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .item1{
+        grid-column: 1 / span 1;
+        grid-row: 1 / Line1;
+        padding: 0 40px;
+        align-self: center;
+    }
+    
+    .item2{
+        background-color: hsl(179, 62%, 43%);
+        grid-column: 1 / span 1;
+        grid-row: 2 / Line2;
+        color: #fff;
+        border-bottom-left-radius: 0;
+    }
+    
+    .item3{
+        background-color: hsl(180, 38%, 54%);
+        grid-column: 1 / span 1;
+        grid-row: 3 / Line3;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .item1{
+        padding: 20px 40px;
+    }
+
+    .item2, .item3{
+        padding: 20px 0;
+    }
+}
